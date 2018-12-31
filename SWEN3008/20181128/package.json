@@ -1,0 +1,17 @@
+{
+  "name": "Threaded Image Downloader",
+  "version": "",
+  "main": "./index.js",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "image-convert": "^0.1.33",
+    "request": "^2.88.0",
+    "threads": "^0.12.0"
+  },
+  "bin" : "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "bin": "./"
+}

@@ -1,0 +1,4 @@
+
+
+1. Implemented Toast for empty insertion and updating of records
+2. Implemented Spinner (Not connected)

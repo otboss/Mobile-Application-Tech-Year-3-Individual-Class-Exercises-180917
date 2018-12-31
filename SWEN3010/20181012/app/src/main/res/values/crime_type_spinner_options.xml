@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="crime_types">
+        <item>Robbery</item>
+        <item>Shooting</item>
+        <item>Kidnapping</item>
+        <item>Murder</item>
+    </string-array>
+</resources>

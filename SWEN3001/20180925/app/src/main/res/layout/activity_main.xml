@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/inputTextAreaDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:paddingLeft="10px"
+            android:paddingTop="30px"
+            android:text="Input your text below"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/inputTextArea"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_weight="2.35"
+            android:background="@drawable/input_border"
+            android:fontFamily="monospace"
+            android:singleLine="false"
+            android:hint="Text Here"
+            android:padding="15px"
+            android:textColor="#000"
+            android:textColorHint="#ABABAB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="30px">
+
+            <Button
+                android:id="@+id/solutionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Solution!" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/solutionDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10px"
+                android:paddingTop="10px"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#ABABAB" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/solutionTextArea"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:layout_weight="2"
+            android:background="@drawable/input_border"
+            android:fontFamily="monospace"
+            android:singleLine="false"
+            android:hint="Solution Text Will Show Here"
+            android:padding="15px"
+            android:textColorHint="#ABABAB" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

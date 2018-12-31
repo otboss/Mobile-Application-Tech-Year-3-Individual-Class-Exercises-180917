@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110px"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <EditText
+                android:id="@+id/searchbox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Search URL"
+                android:paddingTop="30px"
+                android:paddingBottom="32px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"/>
+
+            <Button
+                android:id="@+id/searchbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="80px"
+                android:layout_weight="2"
+                android:text="Go"
+                android:textColor="#FFF"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <WebView
+                android:id="@+id/resultWebview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
