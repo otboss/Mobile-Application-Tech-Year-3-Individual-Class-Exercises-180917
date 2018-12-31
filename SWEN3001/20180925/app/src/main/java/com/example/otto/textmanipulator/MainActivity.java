@@ -20,18 +20,14 @@ public class MainActivity extends AppCompatActivity {
     public int[] bestWidth(String text){
         String[] splittedText = text.split("\n");
         input.measure(0, 0);
-        int initialInputWidth = input.getMeasuredWidth();
-        int bestWidth = initialInputWidth;
+        int inputWidth = input.getMeasuredWidth();
+        int bestWidth = inputWidth;
         int[] longestRiver = new int[]{0,0};/*index 0 for max flow, index 1 for best width*/
-        for(int x = initialInputWidth; x > 0; x--){
+        for(int x = inputWidth; x > 0; x--){
             splittedText = text.split("\n");
-
+            //COMPLETE HERE
         }
         return longestRiver;
-    }
-
-    public int maxFlows(String text){
-        return text.split(" ").length;
     }
 
     public String resultText(String text){
@@ -46,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         solutionButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 TextView solutionText = findViewById(R.id.solutionDetails);
-                solutionText.setText("Total words: "+wordCount(txt)+" Best Width: "+bestWidth(txt)+" Max flows: "+maxFlows(txt));
+                solutionText.setText("Total words: "+wordCount(txt)+" Best Width: "+bestWidth(txt)[1]+" Max flows: "+bestWidth(txt)[0]);
                 solutionTextView.setText(resultText(txt));
             }
         });
